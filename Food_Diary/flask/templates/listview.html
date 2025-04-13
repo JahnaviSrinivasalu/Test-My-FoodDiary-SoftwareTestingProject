@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Food Diary</title>
+    <link rel="stylesheet" href="static/style3.css">
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <center>
+          <a class="textinbar" href="/about">Home</a>
+          <a class="textinbar" href="/newfood">Add a Food Item</a>
+          <a class="textinbar" href="#">Food Items</a>
+          <a class="textinbar" href="/listconsumedview">Consumed Food Items</a>
+          <a class="textinbar" href="/tracker">Food Tracker</a>
+          <a class="textinbar" href="/about">About</a>
+        <center>
+      </div>
+    </nav>
+    <div class="listp">
+      <p><u>List of the Food Items</u></p>
+    </div>
+    <div class="forol">
+      <ol type="1" id="food_item_to_add">
+        {% for values in rs %}
+        <li>{{values.food_name}}</li>
+        Carbo:<span class="forspan">{{values.carbo }}gms</span>
+        Protein:<span class="forspan">{{values.protein }}gms</span>
+        Fat:<span class="forspan">{{values.fat }}gms</span>
+        <form action="/deletefood" method="post" style="display: inline;">
+          <input type="hidden" name="food_name" value="{{ values.food_name }}">
+          <button class="button1" id="button2" type="submit" name="delete">DELETE</button>
+        </form>
+        <button class="button1" id="button3" onclick="window.location.href='/updatefood?food_name={{ values.food_name }}'" name="update">UPDATE</button>
+        <form action="/addfood" method="post" style="display: inline;">
+          <input type="hidden" name="food_name" value="{{ values.food_name }}">
+          <button class="button1" id="button1" type="submit" name="add">ADD</button>
+        </form><hr>
+        {% endfor %}
+      </ol>
+    </div>
+  </body>
+</html>

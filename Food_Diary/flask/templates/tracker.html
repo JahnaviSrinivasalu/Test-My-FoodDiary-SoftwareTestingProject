@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Food Diary</title>
+    <link rel="stylesheet" href="static/style4.css">
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <center>
+          <a class="textinbar" href="/home">Home</a>
+          <a class="textinbar" href="/newfood">Add a Food Item</a>
+          <a class="textinbar" href="/listview">Food Items</a>
+          <a class="textinbar" href="/listconsumedview">Consumed Food Items</a>
+          <a class="textinbar" href="#">Food Tracker</a>
+          <a class="textinbar" href="/about">About</a>
+        <center>
+      </div>
+    </nav>
+    <div class="allinone">
+      <div id="leftdiv">
+        <p class="forhead">
+          This Day
+        </p><br>
+        <p>Carbo:<span>{{p1[0][0]}}</span></p><hr>
+        <p>Protein:<span>{{q1[0][0]}}</span></p><hr>
+        <p>Fat:<span>{{r1[0][0]}}</span></p><br><hr>
+        <div id="fora">
+          <a href="/bargraph"><em>Click here</em></a> to view the Bar Graph(Day)          
+        </div>
+      </div>
+      <div id="rightdiv">
+        <p class="forhead">
+          This Year
+        </p><br>
+        <p>Carbo:<span>{{p3[0][0]}}</span></p><hr>
+        <p>Protein:<span>{{q3[0][0]}}</span></p><hr>
+        <p>Fat:<span>{{r3[0][0]}}</span></p><br><hr>
+        <div id="fora">
+          <a href="/bargraph1"><em>Click here</em></a> to view the Bar Graph(Year)          
+        </div>
+      </div>
+      <div id="middiv">
+        <p class="forhead">
+          This Month
+        </p><br>
+        <p>Carbo:<span>{{p2[0][0]}}</span></p><hr>
+        <p>Protein:<span>{{q2[0][0]}}</span></p><hr>
+        <p>Fat:<span>{{r2[0][0]}}</span></p><br><hr>
+        <div id="fora">
+          <a href="/bargraph2"><em>Click here</em></a> to view the Bar Graph(Month)          
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

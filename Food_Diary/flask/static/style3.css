@@ -1,0 +1,47 @@
+body{
+  background-color: thistle;
+}
+
+.navbar{
+  border:1.5px solid black;
+  background-color: purple;
+  height:30px;
+}
+
+.textinbar{
+  color:white;
+  font-size: 20px;
+  padding:1rem;
+}
+
+.listp{
+  padding-left: 20px;
+  background-color: purple;
+  height:30px;
+  color:white;
+  font-size:20px;
+}
+
+.forspan{
+  background-color: purple;
+  padding-left:20px;
+  padding-right: 20px;
+  color:white;
+  border-radius: 18px;
+  height:20px;
+}
+
+.forol{
+  font-size: 18px;
+  padding-left:10px;
+}
+
+
+.button1{
+    height:25px;
+    font-size:15px;
+    color:white;
+    background-color: purple;
+    float:right;
+    margin-right:15px;
+}

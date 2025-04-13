@@ -1,0 +1,13 @@
+{
+    "base_url": "http://127.0.0.1:5000",
+    "addfood":
+    {
+      "food_name": "PASTA",
+      "carbo": "9",
+      "protein": "4",
+      "fat": "5"
+    }
+  
+    
+}
+  

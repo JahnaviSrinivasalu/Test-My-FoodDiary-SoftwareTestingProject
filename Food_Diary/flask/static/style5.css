@@ -1,0 +1,30 @@
+body{
+  background-color: thistle;
+}
+
+.navbar{
+  border:1.5px solid black;
+  background-color: purple;
+  height:30px;
+}
+
+.textinbar{
+  color:white;
+  font-size: 20px;
+  padding:1rem;
+}
+
+.h1{
+  color : purple;
+  font-size : 32px;
+}
+
+.h2{
+  color : purple;
+  font-size : 28px;
+}
+
+.p{
+  color : purple;
+  font-size:25px;
+}

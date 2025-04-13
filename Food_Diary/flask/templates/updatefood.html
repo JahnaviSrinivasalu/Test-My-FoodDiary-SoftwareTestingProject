@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Food Diary</title>
+    <link rel="stylesheet" href="static/style2.css">
+  </head>
+  <body>
+    <center>
+      <div class="specialdiv">
+        Update Food Item
+      </div>
+      <div class="forform">
+        <form action="/updatefood" method="post">
+          <input type="text" name="food_name" id="food_name" value="{{ food_name }}" placeholder="{{ food_name }}" readonly><br><hr color:grey noshade>
+          <input type="number" name="carbo" id="carbo" placeholder="Carbo in gms" required><br><hr color:grey noshade>
+          <input type="number" name="protein" id="protein" placeholder="Protein in gms" required><br><hr color:grey noshade>
+          <input type="number" name="fat" id="fat" placeholder="Fat in gms" required><br><hr color:grey noshade>
+          <button class="subbut" type="submit" name="button">Save</button>
+        </form>
+      </div>
+    <center>
+    
+  </body>
+</html>
